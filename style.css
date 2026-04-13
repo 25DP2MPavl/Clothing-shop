@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e6e8e6;
+    color: #191919;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.logo-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    bottom: 835px;
+    width: auto;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    object-position: center 30%;
+    object-position: center 70%;
+}
+
+nav a {
+    margin-left: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    justify-content: center;
+    color: #191919;
+    transition: 0.3s;
+    position: relative;
+    top: 25px;
+}
+
+nav a:hover {
+    color: #3a6ea5;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+
+    background-image: url("https://www.hellyhansen.com/content/dam/ss26-eu-homepage/ss26-april-homepage-assets/SS26_Buy_2_get_20_off_Ecomm_Desktop_Hero_Variation%201_1920x700_-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /*black opacity*/
+}
+
+.hero * {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffffffbb;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffffff;
+    transform: scale(1.15);
+}
+
+section {
+    padding: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.info {
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 300%;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.img {
+    height: 120px;
+    background: #ccc;
+    margin-bottom: 10px;
+}
+
+.old {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+}
+
+.search-bar button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {color: rgb(255, 255, 255);}
