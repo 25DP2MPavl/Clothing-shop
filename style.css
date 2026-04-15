@@ -8,7 +8,7 @@
 
 body {
     background: #615d6c;
-    color: #191919;
+    color: #6f8ab7;
 }
 
 header {
@@ -23,6 +23,7 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    color: 615d6c;
 }
 
 .logo-center {
