@@ -118,6 +118,7 @@ section {
     justify-content: space-between;
     transition: 0.3s;
     overflow: hidden;
+    border-radius: 3;
 }
 
 .card img {
